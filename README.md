@@ -1,4 +1,4 @@
-# bootstrap-vue-laravel-form
+# Bootstrap-Vue Laravel Form
 
 > A form component built with bootstrap-vue that works with Laravel validation.
 
