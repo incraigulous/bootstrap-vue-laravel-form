@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent="submit">
         <div class="alert alert-danger"
-                 v-if="showMessage">
+                 v-if="hasMessage">
             {{ message }}
         </div>
         <div class="alert alert-success"
