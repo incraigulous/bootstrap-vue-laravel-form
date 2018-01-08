@@ -24,7 +24,7 @@
     import {BForm, BAlert, BFormGroup} from 'bootstrap-vue/es/components'
 
     export default {
-        components: {BForm, BAlert, BFormGroup},
+        components: {'b-form': BForm, 'b-alert': BAlert, 'b-form-group': BFormGroup},
         props: {
             /**
              * The form submit method.
