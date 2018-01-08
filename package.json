@@ -3,7 +3,7 @@
   "description": "A form component built with bootstrap-vue that works with Laravel validation.",
   "version": "0.0.2",
   "author": "Incraigulous <me@craigwann.com>",
-  "main": "src/form.js",
+  "main": "src/form.vue",
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
