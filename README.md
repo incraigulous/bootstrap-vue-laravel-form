@@ -1,6 +1,6 @@
-# Bootstrap-Vue Laravel Form
+# Vue Laravel Form
 
-> A form component built with bootstrap-vue that works with Laravel validation.
+> A form component built with bootstrap that works with Laravel validation.
 
 ## Example use
 ```js
