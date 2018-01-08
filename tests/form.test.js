@@ -35,7 +35,7 @@ describe('Form', () => {
     })
 
     test('it has the form on load', () => {
-        expect(wrapper.contains('b-form')).toBe(true)
+        expect(wrapper.contains('form')).toBe(true)
     })
 
     test('it submits', (done) => {
@@ -53,7 +53,7 @@ describe('Form', () => {
             })
         })
 
-        wrapper.find('b-form').trigger('submit')
+        wrapper.find('form').trigger('submit')
     })
 
     test('it handles validation errors', (done) => {
@@ -80,7 +80,7 @@ describe('Form', () => {
             })
         })
 
-        wrapper.find('b-form').trigger('submit')
+        wrapper.find('form').trigger('submit')
     })
 
     test('it handles failure', (done) => {
@@ -100,7 +100,7 @@ describe('Form', () => {
             })
         })
 
-        wrapper.find('b-form').trigger('submit')
+        wrapper.find('form').trigger('submit')
     })
 
     test('it can custom validate', () => {
@@ -120,7 +120,7 @@ describe('Form', () => {
 
         expect(vm.submitted).toBe(false)
 
-        wrapper.find('b-form').trigger('submit')
+        wrapper.find('form').trigger('submit')
 
         expect(vm.submitted).toBe(false)
         expect(vm.message).toEqual(message)

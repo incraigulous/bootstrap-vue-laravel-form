@@ -1,30 +1,28 @@
 <template>
-    <b-form @submit.prevent="submit">
-        <b-alert variant="danger"
-                 :show="hasMessage">
+    <form @submit.prevent="submit">
+        <div class="alert alert-danger"
+                 v-if="showMessage">
             {{ message }}
-        </b-alert>
-        <b-alert variant="success"
-                 :show="submitted">
+        </div>
+        <div class="alert alert-success"
+             v-if="submitted">
             {{ successMessage }}
-        </b-alert>
+        </div>
         <slot :hasError="hasError"
               :errorState="errorState"
               :error="error"/>
-        <b-form-group class="mt-3">
-            <b-btn type="submit"
+        <div class="form-group mt-3">
+            <button class="btn btn-primary" type="submit"
                    :disabled="submitting">{{ submitLabel }}
-            </b-btn>
-        </b-form-group>
-    </b-form>
+            </button>
+        </div>
+    </form>
 </template>
 
 <script>
     import axios from "axios"
-    import {BForm, BAlert, BFormGroup} from 'bootstrap-vue/es/components'
 
     export default {
-        components: {'b-form': BForm, 'b-alert': BAlert, 'b-form-group': BFormGroup},
         props: {
             /**
              * The form submit method.
