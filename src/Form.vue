@@ -11,11 +11,15 @@
         <slot :hasError="hasError"
               :errorState="errorState"
               :error="error"/>
-        <div class="form-group mt-3">
-            <button class="btn btn-primary" type="submit"
-                   :disabled="submitting">{{ submitLabel }}
-            </button>
-        </div>
+       <slot name="buttons" :hasError="hasError"
+              :errorState="errorState"
+              :error="error">
+            <div class="form-group mt-3">
+                <button class="btn btn-primary" type="submit"
+                       :disabled="submitting">{{ submitLabel }}
+                </button>
+            </div>
+        </slot>
     </form>
 </template>
 
