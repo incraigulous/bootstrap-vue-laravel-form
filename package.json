@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-vue-laravel-form",
   "description": "A form component built with bootstrap-vue that works with Laravel validation.",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "author": "Incraigulous <me@craigwann.com>",
   "main": "src/Form.vue",
   "license": "MIT",
